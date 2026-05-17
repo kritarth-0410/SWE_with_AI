@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockView — Stock Market Application</title>
+    <link rel="stylesheet" href="stock-claude.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <span class="logo-icon">&#9650;</span>
+                StockView
+            </div>
+            <div class="search-bar">
+                <input class="search-input" type="text" placeholder="Search by company name or ticker symbol…">
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+        <div class="popular-bar">
+            <div class="popular-inner">
+                <span class="popular-label">Popular:</span>
+                <a href="#" class="stock-tag active">AAPL</a>
+                <a href="#" class="stock-tag">MSFT</a>
+                <a href="#" class="stock-tag">GOOGL</a>
+                <a href="#" class="stock-tag">AMZN</a>
+                <a href="#" class="stock-tag">TSLA</a>
+                <a href="#" class="stock-tag">NVDA</a>
+                <a href="#" class="stock-tag">META</a>
+                <a href="#" class="stock-tag">JPM</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main class="main">
+        <div class="container">
+
+            <!-- STOCK HERO -->
+            <section class="stock-hero">
+                <div class="stock-identity">
+                    <div class="ticker-badge">AAPL</div>
+                    <div class="stock-name-group">
+                        <h1 class="company-full-name">Apple Inc.</h1>
+                        <div class="stock-meta">
+                            <span class="exchange-tag">NASDAQ</span>
+                            <span class="sector-tag">Technology</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-section">
+                    <div class="current-price">$182.52</div>
+                    <div class="price-change positive">
+                        <span class="change-arrow">&#9650;</span>
+                        <span>$1.23</span>
+                        <span>(0.68%)</span>
+                    </div>
+                    <div class="price-timestamp">As of May 16, 2026 &middot; NASDAQ &middot; Market Open</div>
+                </div>
+            </section>
+
+            <!-- 52-WEEK RANGE BAR -->
+            <div class="range-banner">
+                <div class="range-inner">
+                    <span class="range-label">52-Week Low</span>
+                    <span class="range-low">$164.08</span>
+                    <div class="range-track">
+                        <div class="range-fill" style="width: 55%;"></div>
+                        <div class="range-thumb" style="left: 55%;"></div>
+                    </div>
+                    <span class="range-high">$199.62</span>
+                    <span class="range-label">52-Week High</span>
+                </div>
+            </div>
+
+            <!-- QUICK STATS -->
+            <section class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-label">Market Cap</div>
+                    <div class="stat-value">$2.82T</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">P/E Ratio</div>
+                    <div class="stat-value">29.8</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">EPS (TTM)</div>
+                    <div class="stat-value">$6.13</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Volume</div>
+                    <div class="stat-value">54.3M</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Avg. Volume</div>
+                    <div class="stat-value">57.2M</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Dividend Yield</div>
+                    <div class="stat-value">0.53%</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Beta</div>
+                    <div class="stat-value">1.24</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Next Earnings</div>
+                    <div class="stat-value">Jul 29, 2026</div>
+                </div>
+            </section>
+
+            <!-- COMPANY INFO + TRADING METRICS -->
+            <div class="info-grid">
+
+                <!-- COMPANY INFO -->
+                <section class="card company-card">
+                    <h2 class="card-title">About the Company</h2>
+                    <p class="company-description">
+                        Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets,
+                        wearables, and accessories worldwide. The company offers iPhone, Mac, iPad, and wearable
+                        products including Apple Watch and AirPods, along with a range of services such as the
+                        App Store, Apple Music, Apple TV+, Apple Pay, and iCloud.
+                    </p>
+                    <div class="details-table">
+                        <div class="detail-row">
+                            <span class="detail-key">CEO</span>
+                            <span class="detail-val">Tim Cook</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-key">Founded</span>
+                            <span class="detail-val">April 1, 1976</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-key">Headquarters</span>
+                            <span class="detail-val">Cupertino, California, USA</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-key">Employees</span>
+                            <span class="detail-val">164,000+</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-key">Sector</span>
+                            <span class="detail-val">Information Technology</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-key">Industry</span>
+                            <span class="detail-val">Consumer Electronics</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-key">Website</span>
+                            <span class="detail-val">apple.com</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-key">Fiscal Year End</span>
+                            <span class="detail-val">Late September</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- TRADING METRICS -->
+                <section class="card metrics-card">
+                    <h2 class="card-title">Trading Metrics</h2>
+                    <div class="metrics-list">
+                        <div class="metric-row">
+                            <span class="metric-key">Open</span>
+                            <span class="metric-val">$181.40</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-key">Previous Close</span>
+                            <span class="metric-val">$181.29</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-key">Day's Range</span>
+                            <span class="metric-val">$180.17 – $183.05</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-key">Forward P/E</span>
+                            <span class="metric-val">27.4</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-key">Price / Sales</span>
+                            <span class="metric-val">7.34</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-key">Price / Book</span>
+                            <span class="metric-val">46.2</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-key">Shares Outstanding</span>
+                            <span class="metric-val">15.44B</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-key">Float</span>
+                            <span class="metric-val">15.33B</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-key">Short Interest</span>
+                            <span class="metric-val">0.71%</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-key">Institutional Ownership</span>
+                            <span class="metric-val">61.3%</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-key">Insider Ownership</span>
+                            <span class="metric-val">0.07%</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-key">Analyst Rating</span>
+                            <span class="metric-val rating-buy">Strong Buy</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- FINANCIAL HISTORY TABLE -->
+            <section class="card financial-card">
+                <div class="financial-header">
+                    <h2 class="card-title">Financial History (Annual)</h2>
+                    <div class="fiscal-note">Fiscal year ends in September &nbsp;&middot;&nbsp; All figures in USD billions unless noted</div>
+                </div>
+                <div class="table-wrapper">
+                    <table class="financial-table">
+                        <thead>
+                            <tr>
+                                <th class="metric-col">Metric</th>
+                                <th>FY 2023</th>
+                                <th>FY 2022</th>
+                                <th>FY 2021</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="section-row">
+                                <td colspan="4">Income Statement</td>
+                            </tr>
+                            <tr>
+                                <td class="metric-name">Revenue</td>
+                                <td>$383.3B</td>
+                                <td>$394.3B</td>
+                                <td>$365.8B</td>
+                            </tr>
+                            <tr>
+                                <td class="metric-name">Gross Profit</td>
+                                <td>$169.1B</td>
+                                <td>$170.8B</td>
+                                <td>$152.8B</td>
+                            </tr>
+                            <tr>
+                                <td class="metric-name">Gross Margin</td>
+                                <td>44.1%</td>
+                                <td>43.3%</td>
+                                <td>41.8%</td>
+                            </tr>
+                            <tr>
+                                <td class="metric-name">Operating Income</td>
+                                <td>$114.3B</td>
+                                <td>$119.4B</td>
+                                <td>$108.9B</td>
+                            </tr>
+                            <tr>
+                                <td class="metric-name">Net Income</td>
+                                <td>$97.0B</td>
+                                <td>$99.8B</td>
+                                <td>$94.7B</td>
+                            </tr>
+                            <tr>
+                                <td class="metric-name">EPS (Diluted)</td>
+                                <td>$6.13</td>
+                                <td>$6.11</td>
+                                <td>$5.67</td>
+                            </tr>
+                            <tr class="section-row">
+                                <td colspan="4">Balance Sheet</td>
+                            </tr>
+                            <tr>
+                                <td class="metric-name">Total Assets</td>
+                                <td>$352.6B</td>
+                                <td>$352.8B</td>
+                                <td>$351.0B</td>
+                            </tr>
+                            <tr>
+                                <td class="metric-name">Total Liabilities</td>
+                                <td>$290.4B</td>
+                                <td>$302.1B</td>
+                                <td>$287.9B</td>
+                            </tr>
+                            <tr>
+                                <td class="metric-name">Total Equity</td>
+                                <td>$62.1B</td>
+                                <td>$50.7B</td>
+                                <td>$63.1B</td>
+                            </tr>
+                            <tr>
+                                <td class="metric-name">Total Debt</td>
+                                <td>$111.1B</td>
+                                <td>$120.1B</td>
+                                <td>$124.7B</td>
+                            </tr>
+                            <tr>
+                                <td class="metric-name">Cash &amp; Equivalents</td>
+                                <td>$29.9B</td>
+                                <td>$23.6B</td>
+                                <td>$34.9B</td>
+                            </tr>
+                            <tr class="section-row">
+                                <td colspan="4">Cash Flow</td>
+                            </tr>
+                            <tr>
+                                <td class="metric-name">Operating Cash Flow</td>
+                                <td>$113.0B</td>
+                                <td>$122.2B</td>
+                                <td>$104.0B</td>
+                            </tr>
+                            <tr>
+                                <td class="metric-name">Capital Expenditures</td>
+                                <td>$10.9B</td>
+                                <td>$10.7B</td>
+                                <td>$11.1B</td>
+                            </tr>
+                            <tr>
+                                <td class="metric-name">Free Cash Flow</td>
+                                <td>$99.6B</td>
+                                <td>$111.4B</td>
+                                <td>$92.9B</td>
+                            </tr>
+                            <tr>
+                                <td class="metric-name">Dividends Paid</td>
+                                <td>$15.1B</td>
+                                <td>$14.8B</td>
+                                <td>$14.5B</td>
+                            </tr>
+                            <tr>
+                                <td class="metric-name">Share Buybacks</td>
+                                <td>$76.6B</td>
+                                <td>$89.4B</td>
+                                <td>$85.5B</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p class="disclaimer">
+                <strong>Disclaimer:</strong> All data shown is for educational and illustrative purposes only and does not reflect real-time or accurate market information.
+                This is not financial advice. Always consult a qualified financial advisor before making investment decisions.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
